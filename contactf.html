@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+        <title>Renad's Mac  Resturant - contact</title>
+		<link rel="stylesheet" type="text/css" href="my style.css">
+		<script>
+function searchFunction() {
+  x = document.getElementsByClassName("article");
+  q = document.getElementById("tsearch");
+  q.value = q.value.toUpperCase();
+  for (i = 0; i < x.length; i++) {
+let text = x[i].children[0].children[1].innerText.toUpperCase()
+let position = text.search(q.value);
+  if(position > -1){
+  x[i].style.display = "";
+  } else {
+  x[i].style.display = "none";
+  }
+  }
+}
+</script>
+		<style>
+			.mydiv1 { 
+				background-color : red;
+				color : white;
+				height: 100px;
+				}
+			.mydiv1 img{ 
+				float: left;
+				width : 100px;
+				height: 100px;
+				}
+			body { 
+			background-color: white;
+			color: black;
+			}
+			h1{
+			padding: 30px;
+			}
+			#Footer  table {
+			width: 100%;
+			bottom:0px;
+			height:30px;  
+			font-weight:bolder;
+			background-color: gray;
+			margin-left: auto;
+			margin-right: auto;
+			color: white;
+			font-size:15px;
+			border: 1px white solid;
+			} 
+		#Footer  {
+			clear: both;
+			position: fixed;
+			bottom: 0px;
+			background-color: none;
+			clear: both;
+			width: 2250px;
+		}
+		</style>
+    </head>
+    <body>
+<div>
+<ul>
+  <li><img src="C:\Users\HP\OneDrive\Desktop\final project\logo.jpeg" height="100px" width="150px"></li>
+  <li style="float:center"><a href="homefin.html" >Home</a></li>
+  <li style="float:center"><a href="proudctfin.html">Products</a></li>
+  <li style="float:center"><a href="contactf.html"class="active">Contact</a></li>
+  <li style="float:center"><a href="aboutfin.html" >About</a></li>
+  <li style="float:right"><input style="width: 80%;" type="text" placeholder="Enter the keywords" id="tsearch"> <button class="button" onclick="searchFunction()">Search</button></li>
+</ul>
+</div>
+
+<br>
+        <div class = "mydiv1">
+			<img src="https://th.bing.com/th/id/OIP.jhqcjmGI6YLuWMc5t4cYTQHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7https://www.bing.com/th/id/OIP.PMxE7ZsDsi4ETx6Pc-TJNQHaCx?w=317&h=130&c=7&r=0&o=5&pid=1.7">
+            <h1>Hello there, are you still looking for a Help?</h1>
+        </div>
+        <div class = ".....">
+			<h3>mcdonald's is here to help you!</h3>
+			<img src="https://th.bing.com/th/id/OIP.Xqs1-sUD3K7SLfDYkYKjJgHaE8?w=236&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+        </div>
+        <div class = ".....">
+			<h3>Drop us a message by filling this form.</h3>
+			
+			<form action="/action_page.php">
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname" value="John"><br>
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname" value="Doe"><br>
+				<label for="lname">Email:</label><br>
+				<input type="text" id="email" name="email" value="Doe.John@gmail.com"><br>
+				<input type="checkbox" id="checkmark1" name="checkmark1" value=" ">
+				<label for="vehicle1">  need help</label><br>
+				<input type="checkbox" id="checkmark2" name="checkmark2" value=" ">
+				<label for="vehicle2"> complaints </label><br>
+				<input type="checkbox" id="checkmark3" name="checkmark3" value=" ">
+				<label for="vehicle3"> suggestion</label><br>			
+  				<label for="html"> </label>
+  				<input type="radio" id="css" name="fav_language" value="CSS">
+  				<label for="css">rate </label>
+  				<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+ 				<label for="javascript">donate </label><br>
+				<input type="submit" value="Submit">
+				
+			</form> 
+        </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="Footer" >
+        <table>
+            <tr>
+                <td>&copy; 2023 mcdonald Renad brunch. All Rights Reserved.</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
+
+

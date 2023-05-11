@@ -1,0 +1,30 @@
+ul {
+  list-style-type: none;
+  margin: 1;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  text-align: center;
+}
+
+li {
+  float: left;
+  font-family: Gotham-bold;
+}
+
+li a {
+  display: block;
+  color: #441500;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: #AC2318;
+}
+
+.active {
+  color: #AC2318;
+}
+ 
